@@ -18,5 +18,3 @@ for _ in range(test_case): # index를 무시하고 싶을 때 _사용
         else:
             queue.append(queue.pop(0))
             
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
