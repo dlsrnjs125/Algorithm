@@ -1,3 +1,4 @@
+# 2023_03_02
 n, m = list(map(int, input().split(' ')))
 data = list(map(int, input().split(' ')))
 
