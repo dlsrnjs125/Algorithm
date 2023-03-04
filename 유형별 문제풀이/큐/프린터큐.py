@@ -17,4 +17,4 @@ for _ in range(test_case): # index를 무시하고 싶을 때 _사용
                 queue.pop(0) # 가장 큰 가중치는 맞지만 내가 원하는 index가 아님
         else:
             queue.append(queue.pop(0))
-            
+ # 수정
