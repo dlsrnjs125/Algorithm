@@ -14,4 +14,4 @@ https://velog.io/@dlsrnjs125
 프린터 큐
 
 ### - 해시
-SHA-256
+SHA-256, 친구 네트워크
