@@ -11,7 +11,7 @@ for i in range(n):
     for j in range(i, n):
         if array[min_index] > array[j]:
             min_index = j
-        array[i], array[min_index] = array[min_index], array[i]
+    array[i], array[min_index] = array[min_index], array[i]
         
 for i in array:
     print(i)
