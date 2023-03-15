@@ -1,7 +1,6 @@
 # 20230315
 import sys
 
-
 def z(n, r, c):
     global result
     # 찾는 좌표라면 result를 출력하고 종료
