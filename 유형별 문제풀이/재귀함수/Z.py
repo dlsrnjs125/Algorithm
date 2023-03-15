@@ -7,9 +7,14 @@ def z(n, r, c):
     # 찾는 좌표라면 result를 출력하고 종료
     if r == R and c == C:
         print(int(result))
+        exit(0)
+       
+    if n == 1:
+        result += 1
         return
 
     # 탐색 증인 배열 중에 찾는 좌표가 없다면 좌표에 크기를 더한다.
+    # 예를 들어 3사분면에 있다면 1, 2사분면은 검사할 필요 x -> 스킵
     if not (r <= R < r + n and c <= C < c + n):
         result += n * n
         return
