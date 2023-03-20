@@ -1,8 +1,8 @@
 # Algorithm
 
 ## 하루에 한 문제씩 풀어보는 유형별 알고리즘
-https://velog.io/@dlsrnjs125
-백준
+https://velog.io/@dlsrnjs125   
+백준   
 https://www.acmicpc.net/
 
 ## 유형별 정리
