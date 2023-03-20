@@ -39,5 +39,5 @@ n, k = map(int, input().split())
 array = list(map(int, input().split()))
 
 array = sorted(array)
-
+# K 번째 수를 구하기 위한 방법
 print(array[k-1])
