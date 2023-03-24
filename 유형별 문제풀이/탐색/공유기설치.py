@@ -9,13 +9,13 @@ def binary_search(array, start, end, target):
     
     while start <= end:
         mid = (start+end) // 2
-        standard = 0
-        cnt = 1
+        value = 0
+        count = 1
         for i in range(n):
-            if house[i] - house[standard] >= mid:
-                cnt += 1
-                standard = i
-        if cnt < target:
+            if house[i] - house[value] >= mid:
+                count += 1
+                value = i
+        if count < target:
             end = mid-1
         else:
             start = mid+1
