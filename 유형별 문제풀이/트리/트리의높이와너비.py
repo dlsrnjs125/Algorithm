@@ -6,18 +6,19 @@ class Node:
         self.number = number
         self.left_node = left_node
         self.right_node = right_node
-        
+
+# 중위 순회 진행
 def in_order(node, level):
     global level_depth, x
     level_depth = max(level_depth, level)
-    
+    # 왼쪽 노드 방문
     if node.left_node != -1:
         in_order(tree[node.left_node], level + 1)
         
     level_min[level] = min(level_min[level], x)
     level_max[level] = max(level_max[level], x)
     x += 1
-    
+    # 오른쪽 노드 방문
     if node.right_node != -1:
      in_order(tree[node.right_node], level + 1)
      
@@ -34,7 +35,7 @@ for i in range(1, n + 1):
     tree[i] = Node(i, -1, -1)
     level_min.append(n)
     level_max.append(0)
-    
+
 for _ in range(n):
     number, left_node, right_node = map(int, input().split())
     tree[number].left_node = left_node
