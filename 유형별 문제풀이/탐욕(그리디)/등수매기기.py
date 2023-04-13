@@ -1,4 +1,4 @@
-# 20230412
+# 20230413
 n = int(input())
 array = []
 result = 0
