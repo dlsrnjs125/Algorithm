@@ -5,7 +5,7 @@ input = sys.stdin.readline
 
 def dijkstra(start):
     heap_data = []
-    heapq.heappush(heap_data, (0, start))
+    heapq.heappush(heap_data, (0, start)) # 시작 정점
     distance[start] = 0
     while heap_data:
         dist, now = heapq.heappop(heap_data)
@@ -20,10 +20,10 @@ def dijkstra(start):
 for _ in range(int(input())):
     n, m, start = map(int, input().split())
     adj = [[] for i in range(n + 1)]
-    distance = [1e9] * (n + 1)
+    distance = [1e9] * (n + 1) # Inf로 초기화
     for _ in range(m):
         x, y, cost = map(int, input().split())
-        adj[y].append((x, cost))
+        adj[y].append((x, cost)) # y를 하는 이유 의존성 관계때문에 뒤집어서
     dijkstra(start)
     count = 0
     max_distance = 0
