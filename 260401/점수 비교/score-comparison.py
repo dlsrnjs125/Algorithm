@@ -1,8 +1,4 @@
 a = []
-b = []
-a = map(int, input().split())
-b = map(int, input().split())
+a = input()
 
 print(a)
-print(b)
-
