@@ -42,4 +42,9 @@ def is_weather(m):
         print("Fall")
     else:
         print("Winter")
-            
+
+
+if is_month_day(y, m , d):
+    is_weather(m)
+else:
+    print(-1)    
